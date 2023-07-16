@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="style.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>urban</title>
+  
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"></script>
+      <script>
+      $(function() {
+      $(".toggle").on("click", function() {
+          if ($(".item").hasClass("active")) {
+              $(".item").removeClass("active");
+          } else {
+              $(".item").addClass("active");
+          }
+      });
+  });
+      </script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul class="menu">
+            <li class="logo"><img src="removebg.png" style="width: 35px;"> <span class="lim" style="font-family: 'Righteous', cursive;
+              color: #fff; top: 26px; position: absolute; padding-left: 3px;">Live In Mars</span></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Articles</a></li>
+            <li class="item"><a href="#">Competitions</a></li>
+            <li class="item"><a href="#">Events</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            </li>
+            <li class="item button"><a href="#">Log In</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+      <div class="content">
+        <div class="words">
+          <div id="lim">
+             <div id="heat"> 
+       <h3>introducing</h3>
+             <h1 class="lim">Live in Mars</h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+             </div>
+       <p class="space">Space, Mars, planets, stars, and the outside world. The moon. You know what about it. You don’t know much, right. I know, I know . You are not worried here with all the information . that can be useful to you.
+       </p>
+             </div>
+             <div class="buttons">
+             
+              <a href="#" class="events_botton">Events</a>
+             
+             
+              <a href="#" class="participate-botton">Participate</a>
+            
+            </div>
+      </div>
+
+
+      </div>
+        
+    </div>
+
+  </body>
+</html>

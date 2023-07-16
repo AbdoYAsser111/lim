@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+  font-family: 'Teco Sans Stencil';
+  src: local('Teco Sans Stencil Bold'), local('Teco-Sans-Stencil-Bold'),
+      url('TecoSansStencil-Bold.woff2') format('woff2'),
+      url('TecoSansStencil-Bold.woff') format('woff'),
+      url('TecoSansStencil-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;;
+}
+.container{
+ 
+  height: 100vh;
+  background-image: url(back.jpeg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+  box-sizing: border-box;
+  position: relative;
+  
+
+
+}
+
+
+body {
+  font-family: sans-serif;
+}
+nav {
+  
+  padding: 5px 20px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+.logo a,
+.toggle a {
+  font-size: 20px;
+}
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor:pointer;
+}
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: #999;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 468px) {
+  .menu {
+      justify-content: center;
+  }
+
+  .logo {
+      flex: 1;
+  }
+
+  .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+      order: 2;
+  }
+  .button.secondary {
+      border: 0;
+  }
+  .button a {
+      padding: 7.5px 15px;
+      background: teal;
+      border: 1px #006d6d solid;
+      border-radius:50em;
+  }
+  .button.secondary a {
+      background: transparent;    
+  }
+  .button a:hover {
+      text-decoration: none;
+      transition:all .25s;
+  }
+  .button:not(.secondary) a:hover {
+      background: #006d6d;
+      border-color: #005959;
+  }
+  .button.secondary a:hover {
+      color: #ddd;
+  } 
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  
+  .item {
+      display: block;
+      width: auto;
+  }
+  .toggle {
+      display: none;
+  }
+  .logo {
+      order: 0;
+  }
+  .item {
+      order: 1;
+  }
+  .button {
+      order: 2;
+  }
+  .menu li {
+      padding: 15px 10px;
+  }
+  .menu li.button {
+      padding-right: 0;
+  }
+}
+@media (max-width : 768px){
+  .container{
+    background-image: url(back_768x768.jpeg);
+    
+  }
+  h1{
+    font-size: 3em;
+  }
+}
+@media (max-width : 450px){
+  .container{
+    background-image: url(back_4_299x612.jpeg);
+  }
+}
+.space{
+  color: #fff;
+  padding-right: 55vw;
+}
+
+
+h2 {
+  color:#333;
+text-align: center; margin-top:100px;
+}
+  h1 {
+  color:#f84e53;
+  font-size: 6.5em;
+  font-family: 'Teco Sans Stencil';
+}
+ h3 {
+  color:white;
+ }
+h4 {
+  color:white;
+
+}
+article{
+  color:white;
+text-align:left; margin-top:100px;
+
+}
+.content{
+  padding-left: 8px;
+  position: relative;
+  top: 20vh;
+  display: flex;
+  
+}
+.space{
+  font-family: 'Times New Roman', Times, serif;
+}
+.events_botton{
+  width: max-content;
+  height: max-content;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(187, 22, 85), rgb(255, 166, 0)) 1;
+  
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+  margin-top: 3vh;
+}
+.participate-botton a{
+  position: relative;
+  
+}
+.participate-botton{
+  width: max-content;
+  height: max-content;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(187, 22, 85), rgb(255, 166, 0)) 1;
+  background-image: linear-gradient(to right, rgb(187, 22, 85) , rgb(255, 166, 0));
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+  margin-top: 3vh;
+  margin-left: 3vw ;
+
+}
+
+.events_botton a{
+  position: relative;
+  
+}
+.buttons{
+  height: 4vh;
+  display: flex;
+}
+@media (max-width: 1200px){
+  h1{
+    font-size: 5em;
+  }
+  .participate-botton a{
+    font-size: 1em;
+  
+
+  }
+  .events_botton a{
+    font-size: 1em;
+  
+  }
+}
+@media (max-width: 1000px){
+  h1{
+    font-size: 4em;
+  }
+  .participate-botton a{
+    font-size: 0.6em;
+    right: 0.2vw;
+  
+
+  }
+  .events_botton a{
+    font-size: 0.6em;
+    right: 0.2vw;
+  
+  }
+  
+  
+}
+@media (max-width: 800px){
+  h1{
+    font-size: 3em;
+  }
+  
+}
+@media (max-width: 500px){
+  h1{
+    font-size: 3em;
+  }
+  .content{
+  
+    
+    margin: auto;
+    width: 60%;
+    
+  }
+  .content p{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    
+  }
+  .container{
+    background-image: url(backk.jpg);
+  }
+}
+@media (max-width: 400px){
+  h1{
+    font-size: 2em;
+  }
+  .content{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 100px;
+  margin-left: auto;
+  width: 60%;
+  
+}
+}
+@media (max-width: 350px){
+  h1{
+    font-size: 2em;
+  }
+  .content{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 110px;
+  margin-left: auto;
+  width: 60%;
+  
+}
+}
+@media (max-width: 339px){
+  h1{
+    font-size: 1.5em;
+  }
+  .content{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 90px;
+  margin-left: auto;
+  width: 60%;
+  
+}
+.content p{
+  font-size: 1em;
+  width: 250px;
+}
+}
